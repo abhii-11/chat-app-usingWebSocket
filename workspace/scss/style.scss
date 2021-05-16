@@ -1,0 +1,169 @@
+body{
+    font-family: sans-serif;
+    .chat-wrap{
+        position: fixed;
+        right: 100px;
+        bottom: 50px;
+        width: 400px;
+        .chat-box{
+            border: solid 1px #fefefe;
+            box-shadow: 0px 0px 20px #aaaaaa;
+            header{
+                .header{
+                    background-color: #46b8da;
+                    color: #fff;
+                    padding: 10px 20px;
+                    margin: 0;
+                    font-size: 20px;
+                    font-weight: 400;
+                    i{
+                        position: absolute;
+                        top: 5px;
+                        right: 10px;
+                        padding: 5px 2px;
+                        cursor: pointer;
+                    }
+                }
+            }
+            article{
+                height: 350px;
+                overflow: scroll;
+                background: #f5f5f5;
+                padding: 10px;
+                position: relative;
+                ul.msg-cont{
+                    list-style-type: none;
+                    padding: 0;
+                    margin: 0;
+                    &::after{
+                        clear: both;
+                        content: '';
+                        display: block;
+                    }
+                    li{
+                        max-width: 70%;
+                        margin: 5px auto;
+                        padding: 15px 20px;
+                        clear: both;
+                        line-height: 20px;
+                        &.request{
+                            float: right;
+                            text-align: right;
+                            background: #ccc;
+                            color: #000;
+                            border-radius: 20px 20px 0;
+                        }
+                        &.response{
+                            float:left;
+                        }
+                        &.carousel{
+                            position: relative;
+                            overflow: hidden;
+                            button{
+                                position: absolute;
+                                top: 50%;
+                                -ms-transform: translate(0, -50%);
+                                -webkit-transform: translate(0, -50%);
+                                transform: translate(0, -50%);
+                                background: #337ab7;
+                                color: #fff;
+                                border: none;
+                                outline: none;
+                                padding: 10px 5px 10px 15px;
+                                font-size: 20px;
+                                cursor: pointer;
+                                &.btn-left{
+                                    left: 0;
+                                    border-radius: 0 20px 20px 0;
+                                    padding: 10px;
+                                    display: none;
+                                }
+                                &.btn-right{
+                                    right: 0;
+                                    border-radius: 20px 0 0 20px;
+                                    padding: 10px 5px 10px 15px;
+                                }
+                            }
+                            .carousel-wrap{
+                                transition: all 0.5s ease 0s;
+                                &::after{
+                                    clear: both;
+                                    content: '';
+                                    display: block;
+                                }
+                                .card{
+                                    width: 32%;
+                                    float: left;
+                                    margin-right: 1%;
+                                    box-sizing: border-box;
+                                    background: #fff;
+                                    padding: 10px 0;
+                                    border-radius: 20px 0 0 20px;
+                                    h3{
+                                        margin: 0 0 10px 15px;
+                                    }
+                                    p{
+                                        border: solid #f5f5f5 3px;
+                                        border-style: solid none;
+                                        padding: 10px 15px;
+                                    }
+                                    a{
+                                        color: #337ab7;
+                                        padding: 15px;
+                                        text-decoration: none;
+                                    }
+                                }
+                            }
+                        }
+                        &.response.text{
+                            background: #fff;
+                            border-radius: 0 25px 25px 25px;
+                        }
+                        img,audio,video{
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+            footer{
+                position: relative;
+                input[type="text"]{
+                    padding: 15px;
+                    width: 100%;
+                    box-sizing: border-box;
+                    border: none;
+                    background: #fff;
+                }
+                .js-send{
+                    position: absolute;
+                    right: 0;
+                    height: 45px;
+                    border: none;
+                    outline: none;
+                    background: none;
+                    color: #337ab7;
+                    font-size: 16px;
+                    width: 80px;
+                    cursor: pointer;
+                }
+            }
+        }
+        .chat-box-opener{
+            text-align: right;
+            margin-top: 20px;
+            >i{
+                color: #337ab7;
+                font-size: 75px;
+                width: 50px;
+                height: 50px;
+                border-radius: 100%;
+                cursor: pointer;
+                box-sizing: border-box;
+                padding: 10px;
+            }
+        }
+    }
+    .hideMe{
+        display: none;
+    }
+}

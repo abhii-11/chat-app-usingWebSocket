@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat-App</title>
+    <link rel="stylesheet" href="./dist/css/style.css"/>
+</head>
+<body>
+    <h1>Avaamo Chat Support</h1>
+    <div class="chat-wrap">
+        <div id="chatBox" class="chat-box js-chat-box hideMe">
+            <header>
+                <h2 class="header">
+                    Avaamo Chat Support
+                    <i class="fa fa-times js-chat-box-close" aria-hidden="true"></i>
+                </h2>
+            </header>
+            <article class="chat-body js-chat-body">
+                <ul class="js-msg-cont msg-cont">
+                </ul>
+            </article>
+            <footer>
+                <input type="text" class="js-chat-msg" placeholder="Enter your message here"/>
+                <button class="js-send">Send</button>
+            </footer>
+        </div>
+        <div class="chat-box-opener">
+            <i class="fa fa-commenting js-chat-box-opener" aria-hidden="true"></i>
+            <!-- <i class="fa fa-times js-chat-box-close hideMe" aria-hidden="true"></i> -->
+        </div>
+    </div>
+    <script src="https://use.fontawesome.com/b03958ffc8.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./workspace/js/script.js"></script>
+</body>
+</html>

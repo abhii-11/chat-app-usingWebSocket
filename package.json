@@ -1,0 +1,19 @@
+{
+  "name": "chat-app-usingwebsocket",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/abhii-11/chat-app-usingWebSocket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/abhii-11/chat-app-usingWebSocket/issues"
+  },
+  "homepage": "https://github.com/abhii-11/chat-app-usingWebSocket#readme"
+}
